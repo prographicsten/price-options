@@ -19,12 +19,12 @@ const NavBar = () => {
         <nav className="text-black px-5 bg-yellow-400">
             <div onClick={() => setOpen(!open)} className="md:hidden text-3xl py-5 md:py-0">
                 {
-                    open === true ? <AiOutlineMenu></AiOutlineMenu> : <AiOutlineClose></AiOutlineClose>
+                    open === true ? <AiOutlineClose></AiOutlineClose> : <AiOutlineMenu></AiOutlineMenu>
                 }
                 
             </div>
-            <ul className={`md:flex duration-1000 absolute md:static
-            ${open ? 'left-5' : '-left-60'}
+            <ul className={`md:flex duration-1000 absolute md:static px-5
+            ${open ? 'left-4' : '-left-60'}
              bg-yellow-400 py-5`}>
                 {
                     routes.map((route) => <Link  key={route.id} route={route}></Link>)
