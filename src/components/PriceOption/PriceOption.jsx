@@ -8,10 +8,10 @@ const PriceOption = ({option}) => {
     return (
         <div className="flex flex-col bg-blue-400 rounded-lg text-white py-5 px-4">
             <h2 className="text-center">
-                <span className="text-5xl">${price}</span>
+                <span className="text-5xl font-bold">${price}</span>
                 <span className="text-2xl">/month</span>
             </h2>
-            <h4 className="text-3xl text-center my-2">{name}</h4>
+            <h4 className="text-3xl text-center my-2 font-bold">{name}</h4>
             <div className="flex-grow">
             {
                 features.map((feature, idx) => <Feature key={idx} feature={feature}></Feature>)

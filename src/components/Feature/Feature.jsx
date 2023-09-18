@@ -7,7 +7,7 @@ const Feature = ({feature}) => {
 
     return (
         <div>
-            <p className='flex items-center gap-2'><BsFillCheckCircleFill className='text-black'></BsFillCheckCircleFill> {feature}</p>
+            <p className='flex items-center gap-2'><i className='bx bxs-check-circle text-black'></i> {feature}</p>
         </div>
     );
 };
