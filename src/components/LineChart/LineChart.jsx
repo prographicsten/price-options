@@ -13,7 +13,7 @@ const LineChart = () => {
       
     return (
         <div className='px-4'>
-            <LChart width={350} height={400} data={studentMarks}>
+            <LChart width={250} height={300} data={studentMarks}>
                 <XAxis dataKey="studentName" />
                 <Line dataKey="math"></Line>
                 <Line dataKey="chemistry" stroke="green"></Line>
