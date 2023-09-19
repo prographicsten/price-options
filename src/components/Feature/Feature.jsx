@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
-import { BsFillCheckCircleFill } from 'react-icons/bs';
 
 const Feature = ({feature}) => {
-    console.log(feature)
+    // console.log(feature)
 
 
     return (
         <div>
-            <p className='flex items-center gap-2'><i className='bx bxs-check-circle text-black'></i> {feature}</p>
+            <span className='flex  gap-2'><span className='flex items-center'><i className='bx bxs-check-circle text-black '></i></span> {feature}</span>
         </div>
     );
 };
